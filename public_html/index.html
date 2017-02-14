@@ -1,0 +1,48 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.3/nv.d3.min.css"/>
+</head>
+
+<body>
+
+  <div class="container" ng-app="app" ng-controller="mainController">
+      <div class="row">
+        <!-- <p> ask bid timeStr </p>
+        <ul class="list-group" id="contact-list" ng-repeat="bbo in bboList">
+                    <li >
+                        {{bbo.ask}} {{bbo.bid}} {{bbo.timeStr}}
+                    </li>
+         </ul> -->
+          <!-- <p> Time  Price Shares tradeType orderReferenceNumber</p>
+         <ul class="list-group" id="contact-list" ng-repeat="trade in tradeList ">
+            {{trade.tradeType}}
+                     <li >
+                      {{trade.time | nanosecondsTohhmmss}}  {{trade.time}} {{trade.price}} {{trade.shares}} {{trade.tradeType}} {{trade.orderReferenceNumber}}
+                     </li>
+          </ul> -->
+
+              <nvd3 options="options" data="data"></nvd3>
+
+              
+
+       </div>
+  </div>
+
+
+  <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js'></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.3/nv.d3.min.js"></script>
+   <script src="https://rawgit.com/krispo/angular-nvd3/v1.0.7/dist/angular-nvd3.js"></script>
+
+
+  <script src="app.js" ></script>
+
+</body>
+
+</html>
